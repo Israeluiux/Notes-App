@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "",
+      "password": "admin"
+    }
+  ],
+
+  
+  "notes": [
+    {
+      "id": "1",
+      "type": "Design",
+      "title": "The role of Nigerian Mothers in a Nigerian Home",
+      "body": "lol",
+      "author": "me",
+      "date": "2025-09-10",
+      "isFavorite": false,
+      "status": "Completed"
+    },
+    {
+      "id": "2",
+      "type": "Education",
+      "title": "The role of Primary Schools and Day school in a Nigerian Educational System",
+      "body": "lol",
+      "author": "you",
+      "date": "2025-09-10",
+      "isFavorite": false,
+      "status": "draft"
+    },
+    {
+      "id": "3",
+      "type": "Travel",
+      "title": "Is Nigeria Aviation still functioning like before??",
+      "body": "lol",
+      "author": "me",
+      "date": "2025-09-10",
+      "isFavorite": false,
+      "status": "Completed"
+    },
+    {
+      "id": "4",
+      "type": "Health",
+      "title": "The rise of cancer and level at which stoners are rising",
+      "body": "lol",
+      "author": "me",
+      "date": "2025-09-10",
+      "isFavorite": false,
+      "status": "Completed"
+    }
+  ]
+}
