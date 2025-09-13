@@ -3,6 +3,7 @@ import Home from './Pages/Home';
 import SingleNote from './Pages/SingleNote';
 import Task from './Pages/Task';
 import NewNote from './Pages/NewNote';
+import Favorite from './Pages/Favorite';
 import Login from './Auth/Login';
 import Register from './Auth/Register';
 import PrivateRoute from './Auth/PrivateRoute';
@@ -19,6 +20,7 @@ function App() {
                 <Route path='note/:id' element={<SingleNote />} />
                 <Route path='/task' element={<Task />} />
                 <Route path='/new-note' element={<NewNote />} />
+                <Route path='/favorite' element={<Favorite />} />
             </Route>
         </Routes>
   );

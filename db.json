@@ -102,9 +102,30 @@
       "title": "Nothing really to talk about. I just feel like testing this",
       "author": "Israel",
       "date": "2025-09-12",
+      "status": "Completed",
+      "type": "Design",
+      "isFavorite": false
+    },
+    {
+      "id": "5a13",
+      "body": "hey there",
+      "title": "hello",
+      "author": "Israel",
+      "date": "2025-09-13",
+      "status": "Completed",
+      "type": "Design",
+      "isFavorite": false
+    },
+    {
+      "id": "4c65",
+      "body": "what is goog",
+      "title": "hiiiiiiiiiiiiiiii",
+      "author": "Israel",
+      "date": "2025-09-13",
       "isFavorite": false,
       "status": "Completed",
-      "type": "Design"
+      "type": "Design",
+      "newFavorite": true
     }
   ]
 }
