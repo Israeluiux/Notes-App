@@ -1,9 +1,18 @@
-import { useState, createContext } from "react";
+import { useState, createContext, useEffect } from "react";
 
 export const AuthContext = createContext()
 
-const AuthProvider = ({ children }) => {
+export const AuthProvider = ({ children }) => {
     const [auth, setAuth] = useState(null)
+    const [loading, setLoading] = useState(true)
+
+    useEffect(() => {
+        const Storeduser = localStorage.getItem("currentuser")
+        if(Storeduser){
+            setAuth(JSON.parse(Storeduser))
+        }
+        setLoading(false)
+    }, []) 
 
     const login = async (username, password, email) => {
             let response = await fetch('http://localhost:5000/users?username=' + username || email)
@@ -24,11 +33,14 @@ const AuthProvider = ({ children }) => {
             }
     }
 
+    const logout = () => {
+        setAuth(null)
+        localStorage.removeItem("currentuser")
+    }
+
     return(
-        <AuthContext.Provider value={{auth, login}}>
+        <AuthContext.Provider value={{auth, login, logout, loading}}>
             { children }
         </AuthContext.Provider>
     )
 }
-
-export default AuthProvider

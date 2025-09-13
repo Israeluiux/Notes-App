@@ -1,7 +1,11 @@
 import { Link, NavLink } from "react-router-dom"
 import { FaTasks, FaRegHeart, FaRegFileAlt, FaCog, FaUserCircle, FaSignOutAlt, FaRegStickyNote } from "react-icons/fa";
+import { useContext } from "react";
+import { AuthContext } from "../Auth/AuthContext";
 
 const Sidebar = () => {
+    const { logout } = useContext(AuthContext)
+
     return(
         <>
           <aside className="sidebar">
@@ -15,7 +19,7 @@ const Sidebar = () => {
                 </div>
                 <div className="sidebar-links" style={{marginTop: 'auto', marginBottom: '3rem'}}>
                     <NavLink to='/profile'><div className="nav"><FaUserCircle size={15}/> Profile</div></NavLink>
-                    <NavLink to='/logout'><div className="nav error" style={{color: 'red'}}><FaSignOutAlt size={15}/> Logout</div></NavLink>
+                    <NavLink onClick={logout} to='/logout'><div className="nav error" style={{color: 'red'}}><FaSignOutAlt size={15}/> Logout</div></NavLink>
                 </div>
           </aside>
         </>

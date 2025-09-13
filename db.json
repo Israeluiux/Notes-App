@@ -5,10 +5,26 @@
       "username": "admin",
       "email": "",
       "password": "admin"
+    },
+    {
+      "id": "54e2",
+      "email": "opeyemibalo01@gmail.com",
+      "username": "balogun",
+      "password": "Oluwatosin"
+    },
+    {
+      "id": "d6de",
+      "email": "hello@gmail.com",
+      "username": "daniel01",
+      "password": "balogun@15"
+    },
+    {
+      "id": "27a0",
+      "email": "",
+      "username": "Israel",
+      "password": "welcome"
     }
   ],
-
-  
   "notes": [
     {
       "id": "1",
@@ -49,6 +65,46 @@
       "date": "2025-09-10",
       "isFavorite": false,
       "status": "Completed"
+    },
+    {
+      "id": "6c86",
+      "body": "Value of Artificial Intelligence in Secondary School StudentsValue of Artificial Intelligence in Secondary School StudentsValue of Artificial Intelligence in Secondary School StudentsValue of Artificial Intelligence in Secondary School StudentsValue of Artificial Intelligence in Secondary School Students",
+      "title": "Value of Artificial Intelligence in Secondary School Students",
+      "author": "daniel01",
+      "date": "",
+      "isFavorite": false,
+      "status": "Completed",
+      "type": ""
+    },
+    {
+      "id": "ad3f",
+      "body": "Value of Artificial Intelligence in Secondary School Students. Value of Artificial Intelligence helligence in Secondary Sch",
+      "title": "Pressureee",
+      "author": "daniel01",
+      "date": "2025-09-12",
+      "isFavorite": false,
+      "status": "Completed",
+      "type": ""
+    },
+    {
+      "id": "0c61",
+      "body": "Yes, lecturers are still really terrorizing students in tertiary institutions in Nigeria.\nlecturers still really terrorizing students in tertiary institutions in Nigeria......lecturers still really terrorizing students in tertiary institutions in Nigeria",
+      "title": "Are lecturers still really terrorizing students in tertiary institutions in Nigeria",
+      "author": "daniel01",
+      "date": "2025-09-12",
+      "isFavorite": false,
+      "status": "Completed",
+      "type": "Design"
+    },
+    {
+      "id": "f7d1",
+      "body": "Tested asf",
+      "title": "Nothing really to talk about. I just feel like testing this",
+      "author": "Israel",
+      "date": "2025-09-12",
+      "isFavorite": false,
+      "status": "Completed",
+      "type": "Design"
     }
   ]
 }

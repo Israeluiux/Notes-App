@@ -1,11 +1,11 @@
 import { useState, useEffect, useContext } from "react"
 import { FaExclamationTriangle } from "react-icons/fa"
 import { useNavigate, Link } from "react-router-dom"
-import { AuthContext } from "../Auth/AuthContext"
+import { AuthContext } from "../../Auth/AuthContext"
 
 
 const LoginForm = () => {
-    const { login, auth } = useContext(AuthContext)
+    const { login } = useContext(AuthContext)
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError] = useState(false)
@@ -31,10 +31,10 @@ const LoginForm = () => {
         setPassword('')
     }
 
-    // const backtouser = (e) => {
-    //     e.preventDefault()
-    //     navigate('/')
-    // }
+    const signup = (e) => {
+        e.preventDefault()
+        navigate('/register')
+    }
 
     return (
         <>
@@ -62,7 +62,7 @@ const LoginForm = () => {
                            onChange={(e) => setPassword(e.target.value)} />
                 </div>
                 <button type="submit" className="btn">Login</button>
-                <button type="button" className="user">Sign up</button>
+                <button type="button" className="user" onClick={signup}>Sign up</button>
             </form>
         </>
     )

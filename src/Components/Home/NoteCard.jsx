@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react"
 import Card from "./Card"
+import { FaNoteSticky } from "react-icons/fa6"
+import { useNavigate } from "react-router-dom"
 
-const NoteCard = () => {
+const NoteCard = ({search}) => {
     const [notes, setNotes] = useState([])
+    const navigate = useNavigate()
 
     useEffect(() => {
         const fetchdata = async () => {
@@ -14,11 +17,14 @@ const NoteCard = () => {
             } catch (error) {
                 console.error(error)
             }
-            
         }
 
         fetchdata()
     }, [])
+
+    const addNew = () => {
+       navigate('/new-note')
+    }
 
     return(
         <>
@@ -26,10 +32,14 @@ const NoteCard = () => {
                 <div style={{fontWeight: 'bold', fontSize: '1.2rem'}}>My notes</div>
                 <div className="card-container">
                     {
-                        notes.map(note => (
+                        notes.filter((note) => {return search === '' ? note : note.title.includes(search)}).map(note => (
                         <Card key={note.id} note={note}/>
                     )
                 )}
+                <div className="new" onClick={addNew}>
+                    <FaNoteSticky size={30} />
+                    <p style={{fontWeight: 'bold', fontSize: '1.1rem'}}>New Note</p>
+                </div>
                 </div>
             </div>
         </>

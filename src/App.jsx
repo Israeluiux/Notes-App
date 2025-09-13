@@ -1,19 +1,25 @@
 import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import UserLayout from './Pages/UserLayout';
-import Login from './Auth/Login';
+import Home from './Pages/Home';
+import SingleNote from './Pages/SingleNote';
 import Task from './Pages/Task';
+import NewNote from './Pages/NewNote';
+import Login from './Auth/Login';
+import Register from './Auth/Register';
+import PrivateRoute from './Auth/PrivateRoute';
 
 
 function App() {
   return (
-        <Routes>
+    <Routes>
           <Route path='/login' element={<Login />} />
-          <Route path='/' element={<UserLayout />}>
-           <Route index element={<Home />} />
-           <Route path='/' element={<Home />} />
-           <Route path='/task' element={<Task />} />
-          </Route>
+          <Route path='/register' element={<Register />} />
+            <Route path='/' element={<PrivateRoute />}>
+                <Route index element={<Home />} />
+                <Route path='/' element={<Home />} />
+                <Route path='note/:id' element={<SingleNote />} />
+                <Route path='/task' element={<Task />} />
+                <Route path='/new-note' element={<NewNote />} />
+            </Route>
         </Routes>
   );
 }

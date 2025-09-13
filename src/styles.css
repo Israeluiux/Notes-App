@@ -89,8 +89,7 @@ section{
 }
 
 .login-container{
-  /* background: #171924; */
-  height: 100vh;
+  padding: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,12 +158,12 @@ section{
   margin: 2rem 0;
 }
 
+
 .card-container{
   margin-top: 1.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1rem;
-
 }
 
 .card-container .card{
@@ -176,6 +175,18 @@ section{
   display: flex;
   flex-direction: column;
   cursor: pointer;
+}
+
+.card-container .new{
+  border-radius: 1rem; 
+  border: 2px dashed #ccc;    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  cursor: pointer;
+  padding: 1rem;
 }
 
 /* .card-container .card:hover{
@@ -242,4 +253,86 @@ end of green */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.note-head{
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.note-head .btn{
+  padding: .6rem 1rem;
+  background: #333;
+  color: #ffffff;
+  border-radius: .8rem;
+  font-size: .9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+  border: none;
+}
+
+.note-head .edit{
+  background: rgb(120, 62, 255);
+}
+
+.new-container{
+  padding: 0 2rem;
+}
+
+.new-container .title{
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 2rem;
+  padding-left: 0;
+  border: none;
+  background: none;
+  min-height: auto;
+  max-height: auto;
+  font-family: inherit;
+  resize: none;
+  overflow-y: hidden;
+  padding: 0;
+  line-height: 1.3;
+  font-weight: bolder;
+}
+
+.new-container .title:focus{
+  outline: none;
+}
+
+.new-container .body{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-left: 0;
+  font-size: 1.1rem;
+  border: none;
+  background: none;
+  min-height: auto;
+  max-height: auto;
+  font-family: inherit;
+  resize: none;
+  overflow-y: hidden;
+  line-height: 1.5;
+}
+
+.new-container .body:focus{
+  outline: none;
+}
+
+.type{
+  padding: .6rem;
+  background: #27AE60;
+  border-radius: .7rem;
+  color: #fff;
+  font-size: .9rem;
+  display: flex;
+  align-items: center;
+  gap: .4rem;  
+  cursor: pointer;
 }
