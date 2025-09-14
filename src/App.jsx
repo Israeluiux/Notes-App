@@ -7,6 +7,8 @@ import Favorite from './Pages/Favorite';
 import Login from './Auth/Login';
 import Register from './Auth/Register';
 import PrivateRoute from './Auth/PrivateRoute';
+import Trash from './Pages/Trash';
+import Setting from './Pages/Setting';
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
                 <Route path='/task' element={<Task />} />
                 <Route path='/new-note' element={<NewNote />} />
                 <Route path='/favorite' element={<Favorite />} />
+                <Route path='/trash' element={<Trash />} />
+                <Route path='/settings' element={<Setting />} />
             </Route>
         </Routes>
   );

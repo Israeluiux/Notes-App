@@ -23,6 +23,12 @@
       "email": "",
       "username": "Israel",
       "password": "welcome"
+    },
+    {
+      "id": "1cc2",
+      "email": "",
+      "username": "Emmanuel",
+      "password": "emma@123"
     }
   ],
   "notes": [
@@ -33,8 +39,8 @@
       "body": "lol",
       "author": "me",
       "date": "2025-09-10",
-      "isFavorite": false,
-      "status": "Completed"
+      "isFavorite": true,
+      "draft": false
     },
     {
       "id": "2",
@@ -44,7 +50,7 @@
       "author": "you",
       "date": "2025-09-10",
       "isFavorite": false,
-      "status": "draft"
+      "draft": false
     },
     {
       "id": "3",
@@ -54,7 +60,7 @@
       "author": "me",
       "date": "2025-09-10",
       "isFavorite": false,
-      "status": "Completed"
+      "draft": false
     },
     {
       "id": "4",
@@ -64,7 +70,7 @@
       "author": "me",
       "date": "2025-09-10",
       "isFavorite": false,
-      "status": "Completed"
+      "draft": false
     },
     {
       "id": "6c86",
@@ -73,7 +79,7 @@
       "author": "daniel01",
       "date": "",
       "isFavorite": false,
-      "status": "Completed",
+      "draft": false,
       "type": ""
     },
     {
@@ -83,7 +89,7 @@
       "author": "daniel01",
       "date": "2025-09-12",
       "isFavorite": false,
-      "status": "Completed",
+      "draft": false,
       "type": ""
     },
     {
@@ -93,7 +99,7 @@
       "author": "daniel01",
       "date": "2025-09-12",
       "isFavorite": false,
-      "status": "Completed",
+      "draft": false,
       "type": "Design"
     },
     {
@@ -102,7 +108,7 @@
       "title": "Nothing really to talk about. I just feel like testing this",
       "author": "Israel",
       "date": "2025-09-12",
-      "status": "Completed",
+      "draft": false,
       "type": "Design",
       "isFavorite": false
     },
@@ -112,7 +118,7 @@
       "title": "hello",
       "author": "Israel",
       "date": "2025-09-13",
-      "status": "Completed",
+      "draft": false,
       "type": "Design",
       "isFavorite": false
     },
@@ -123,9 +129,59 @@
       "author": "Israel",
       "date": "2025-09-13",
       "isFavorite": false,
-      "status": "Completed",
+      "draft": false,
       "type": "Design",
       "newFavorite": true
+    },
+    {
+      "id": "5f50",
+      "body": "hello",
+      "title": "hey",
+      "author": "Israel",
+      "date": "2025-09-13",
+      "isFavorite": false,
+      "draft": false,
+      "type": "Education"
+    },
+    {
+      "id": "8088",
+      "body": "hry",
+      "title": "Nigeria health sector issues",
+      "author": "Israel",
+      "date": "2025-09-13",
+      "isFavorite": false,
+      "draft": false,
+      "type": null
+    },
+    {
+      "id": "5da1",
+      "body": "hi",
+      "title": "hello",
+      "author": "Israel",
+      "date": "2025-09-14",
+      "isFavorite": false,
+      "draft": false,
+      "type": "Design"
+    },
+    {
+      "id": "9100",
+      "body": "ywah",
+      "title": "avaition",
+      "author": "Israel",
+      "date": "2025-09-14",
+      "isFavorite": true,
+      "draft": false,
+      "type": "Travel"
+    },
+    {
+      "id": "55e2",
+      "body": "okay",
+      "title": "Educational sector",
+      "author": "Emmanuel",
+      "date": "2025-09-14",
+      "isFavorite": false,
+      "draft": false,
+      "type": "Education"
     }
   ]
 }

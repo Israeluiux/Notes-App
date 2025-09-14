@@ -204,33 +204,17 @@ section{
   gap: .4rem;
 }
 
-
-/* for green
-
-.card-container .card .type{
-  padding: .4rem;
-  background: #28af60;
-  border-radius: .7rem;
-  color: #fff;
-  font-size: .9rem;
-}
-
-.card-container .card{
-  padding: 1rem;
-  height: auto;
-  border-radius: 1rem;
-  background: hsl(145, 63%, 92%);
+.card-container .add{
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  cursor: pointer;
+  border: 1px solid hsl(0, 100%, 94%);
 }
 
-.card-container .card:hover{
-  box-shadow: 0 0.5rem 5rem rgba(0, 255, 0, 0.19);
+.card-container .add .content{
+  text-align: center;
 }
-
-end of green */
-
 
 .card-container .card .title{
   font-weight: bold;
@@ -308,7 +292,7 @@ end of green */
 .new-container .body{
   width: 100%;
   box-sizing: border-box;
-  padding: 1rem;
+  /* padding: 1rem; */
   padding-left: 0;
   font-size: 1.1rem;
   border: none;
@@ -325,9 +309,36 @@ end of green */
   outline: none;
 }
 
+.new-container ul{
+  list-style: none;
+  position: absolute;
+  background: #fff;
+  padding: .5rem;
+  border-radius: 1rem;
+  border: 1px solid #e1e1e1;
+  left: 23rem;
+  top: 7rem;
+}
+
+.new-container ul li{
+  /* border-bottom: 1px solid #e1e1e1; */
+  padding: .4rem 1rem;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  gap: .5rem;
+  color: hsl(0, 0%, 40%);
+  cursor: pointer;
+  border-radius: .2rem;
+}
+
+.new-container ul li:hover{
+  background: #d6d6d6;
+}
+
 .type{
   padding: .6rem;
-  background: #27AE60;
+  background: #333;
   border-radius: .7rem;
   color: #fff;
   font-size: .9rem;
@@ -335,4 +346,8 @@ end of green */
   align-items: center;
   gap: .4rem;  
   cursor: pointer;
+}
+
+key{
+  background: rgb(87, 35, 255);
 }

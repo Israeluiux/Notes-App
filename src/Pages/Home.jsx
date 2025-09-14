@@ -3,6 +3,7 @@ import Navbar from "../Components/Home/Navbar"
 import NoteCard from "../Components/Home/NoteCard"
 import { useContext, useEffect, useState } from "react"
 import { AuthContext } from "../Auth/AuthContext"
+import QuickLink from "../Components/Home/QuickLink"
 
 const Home = () => {
     const today = new Date().getHours()
@@ -30,6 +31,7 @@ const Home = () => {
                     <div style={{fontSize: '2rem', marginBottom: '.7rem'}}>{day}</div>
                     <div>Glad to have you back buddy!</div>
                 </div>
+                <QuickLink />
                 <NoteCard search={search}/>
             </section>
         </div>

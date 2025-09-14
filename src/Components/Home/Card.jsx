@@ -1,11 +1,12 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { FaRegHeart, FaGraduationCap, FaPlane } from "react-icons/fa"
-import { FaHeart } from "react-icons/fa6"
+import { FaHeart, FaKitMedical, FaPalette, FaPerson } from "react-icons/fa6"
 import { useNavigate } from "react-router-dom"
 
 const Card = ({ note }) => {
     const navigate = useNavigate()
     const [isFavorite, setIsFavorite] = useState(note.isFavorite)
+    const [type, setType] = useState(note.type)
 
     const handleNote = () => {
         navigate(`note/${note.id}`)
@@ -22,20 +23,45 @@ const Card = ({ note }) => {
                 body: JSON.stringify({isFavorite: newFavorite})
             })
         const body = await response.json()
-            console.log(body)
         } catch (error) {
             console.error(error)
         }
     }
 
+    useEffect(() => {
+            switch (type) {
+                case 'Design':
+                    setType(<><FaPalette />{note.type}</>)
+                    break;
+                case 'Education':
+                    // return <FaGraduationCap /> {note.type}
+                    setType(<><FaGraduationCap />{note.type}</>)
+                    break;
+                case 'Travel':
+                    // return <FaPlane /> {note.type}
+                   setType(<><FaPlane />{note.type}</>)
+                    break;
+                case 'Health':
+                    // return <FaKitMedical /> {note.type}
+                    setType(<><FaKitMedical />{note.type}</>)
+                    break;
+            
+                default:
+                    // return <FaPerson /> {note.type} 
+                    setType(<><FaPerson /> Personal</>)
+                    break;
+            }
+    }, [])
+
     return(
         <>
             <div className="card">
                 <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: '100'}}>
-                    <p className="type"><FaPlane />{note.type}</p>
+                    <p className="type">{type}</p>
+                    {/* <p className="type"><FaPlane />{note.type}</p> */}
                     <div onClick={handleLike}  className="favorite">{isFavorite === false ? <FaRegHeart color="white"/> : <FaHeart color="white"/>}</div>
                 </div>
-                <div className="title">{note.title}</div>
+                <div onClick={handleNote} className="title">{note.title}</div>
                 <div style={{marginTop: 'auto'}}>
                     <div className="author">{note.author}</div>
                     <div className="author">{note.date}</div>

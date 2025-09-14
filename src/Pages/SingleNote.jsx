@@ -22,7 +22,6 @@ const SingleNote = () => {
             try {
                 const response = await fetch(`http://localhost:5000/notes/${id}`)
                 const data = await response.json()
-                console.log(data)
                 setNote(data)
             } catch (error) {
                 console.error(error)
@@ -34,12 +33,12 @@ const SingleNote = () => {
     return (
         <section>
             <div className="note-head">
-                <div style={{fontWeight: 'bold', fontSize: '1.5rem'}}>New Note</div>  
+                <div style={{fontWeight: 'bold', fontSize: '1.5rem'}}>Note #{note.id}</div>  
                     <button className="btn edit"><FaEdit size={15}/><span>Edit</span></button>  
                 </div>
             <form className="new-container">
                 <div style={{display: 'flex'}}>
-                    <p className="type"><FaPalette />{note.type}</p>
+                    <p className="type">{note.type}</p>
                 </div>
                 <textarea
                     type="text" 

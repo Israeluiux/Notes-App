@@ -25,7 +25,7 @@ const Favorite = () => {
 
     return(
         <section>
-            <div style={{fontSize: '2rem', marginBottom: '.7rem'}}>Favorites</div>
+            <div style={{fontSize: '2rem', marginBottom: '.7rem', fontWeight: 'bold'}}>Favorites</div>
 
             {
                 noNote &&

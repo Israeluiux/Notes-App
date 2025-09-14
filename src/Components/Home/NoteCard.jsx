@@ -13,7 +13,6 @@ const NoteCard = ({search}) => {
                 const response = await fetch('http://localhost:5000/notes')
                 let data = await response.json()
                 setNotes(data)
-                console.log(data)
             } catch (error) {
                 console.error(error)
             }
@@ -29,7 +28,7 @@ const NoteCard = ({search}) => {
     return(
         <>
             <div className="note-container">
-                <div style={{fontWeight: 'bold', fontSize: '1.2rem'}}>My notes</div>
+                <div style={{fontWeight: 'bold', fontSize: '1rem'}}>My Notes</div>
                 <div className="card-container">
                     {
                         notes.filter((note) => {return search === '' ? note : note.title.includes(search)}).map(note => (
