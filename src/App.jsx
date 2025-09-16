@@ -9,6 +9,7 @@ import Register from './Auth/Register';
 import PrivateRoute from './Auth/PrivateRoute';
 import Trash from './Pages/Trash';
 import Setting from './Pages/Setting';
+import Profile from './Pages/Profile';
 
 
 function App() {
@@ -20,10 +21,13 @@ function App() {
                 <Route index element={<Home />} />
                 <Route path='/' element={<Home />} />
                 <Route path='note/:id' element={<SingleNote />} />
+                <Route path='favorite/note/:id' element={<SingleNote />} />
+                <Route path='trash/note/:id' element={<SingleNote />} />
                 <Route path='/task' element={<Task />} />
                 <Route path='/new-note' element={<NewNote />} />
                 <Route path='/favorite' element={<Favorite />} />
                 <Route path='/trash' element={<Trash />} />
+                <Route path='/profile' element={<Profile />} />
                 <Route path='/settings' element={<Setting />} />
             </Route>
         </Routes>

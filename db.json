@@ -39,28 +39,8 @@
       "body": "lol",
       "author": "me",
       "date": "2025-09-10",
-      "isFavorite": true,
-      "draft": false
-    },
-    {
-      "id": "2",
-      "type": "Education",
-      "title": "The role of Primary Schools and Day school in a Nigerian Educational System",
-      "body": "lol",
-      "author": "you",
-      "date": "2025-09-10",
       "isFavorite": false,
-      "draft": false
-    },
-    {
-      "id": "3",
-      "type": "Travel",
-      "title": "Is Nigeria Aviation still functioning like before??",
-      "body": "lol",
-      "author": "me",
-      "date": "2025-09-10",
-      "isFavorite": false,
-      "draft": false
+      "trash": true
     },
     {
       "id": "4",
@@ -70,7 +50,7 @@
       "author": "me",
       "date": "2025-09-10",
       "isFavorite": false,
-      "draft": false
+      "trash": false
     },
     {
       "id": "6c86",
@@ -79,7 +59,7 @@
       "author": "daniel01",
       "date": "",
       "isFavorite": false,
-      "draft": false,
+      "trash": true,
       "type": ""
     },
     {
@@ -89,7 +69,7 @@
       "author": "daniel01",
       "date": "2025-09-12",
       "isFavorite": false,
-      "draft": false,
+      "trash": true,
       "type": ""
     },
     {
@@ -99,7 +79,7 @@
       "author": "daniel01",
       "date": "2025-09-12",
       "isFavorite": false,
-      "draft": false,
+      "trash": false,
       "type": "Design"
     },
     {
@@ -108,7 +88,7 @@
       "title": "Nothing really to talk about. I just feel like testing this",
       "author": "Israel",
       "date": "2025-09-12",
-      "draft": false,
+      "trash": false,
       "type": "Design",
       "isFavorite": false
     },
@@ -118,30 +98,9 @@
       "title": "hello",
       "author": "Israel",
       "date": "2025-09-13",
-      "draft": false,
+      "trash": false,
       "type": "Design",
       "isFavorite": false
-    },
-    {
-      "id": "4c65",
-      "body": "what is goog",
-      "title": "hiiiiiiiiiiiiiiii",
-      "author": "Israel",
-      "date": "2025-09-13",
-      "isFavorite": false,
-      "draft": false,
-      "type": "Design",
-      "newFavorite": true
-    },
-    {
-      "id": "5f50",
-      "body": "hello",
-      "title": "hey",
-      "author": "Israel",
-      "date": "2025-09-13",
-      "isFavorite": false,
-      "draft": false,
-      "type": "Education"
     },
     {
       "id": "8088",
@@ -150,18 +109,8 @@
       "author": "Israel",
       "date": "2025-09-13",
       "isFavorite": false,
-      "draft": false,
+      "trash": false,
       "type": null
-    },
-    {
-      "id": "5da1",
-      "body": "hi",
-      "title": "hello",
-      "author": "Israel",
-      "date": "2025-09-14",
-      "isFavorite": false,
-      "draft": false,
-      "type": "Design"
     },
     {
       "id": "9100",
@@ -169,8 +118,8 @@
       "title": "avaition",
       "author": "Israel",
       "date": "2025-09-14",
-      "isFavorite": true,
-      "draft": false,
+      "isFavorite": false,
+      "trash": false,
       "type": "Travel"
     },
     {
@@ -180,8 +129,18 @@
       "author": "Emmanuel",
       "date": "2025-09-14",
       "isFavorite": false,
-      "draft": false,
+      "trash": false,
       "type": "Education"
+    },
+    {
+      "id": "20b4",
+      "body": "Nothing...",
+      "title": "Heath centers in Nigeria",
+      "author": "Emmanuel",
+      "date": "2025-09-15",
+      "isFavorite": true,
+      "trash": true,
+      "type": "Health"
     }
   ]
 }

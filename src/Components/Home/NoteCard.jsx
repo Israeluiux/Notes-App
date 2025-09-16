@@ -12,7 +12,8 @@ const NoteCard = ({search}) => {
             try {
                 const response = await fetch('http://localhost:5000/notes')
                 let data = await response.json()
-                setNotes(data)
+                const newData = data.filter(each => each.trash === false)
+                setNotes(newData)
             } catch (error) {
                 console.error(error)
             }
