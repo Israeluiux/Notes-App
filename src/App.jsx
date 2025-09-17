@@ -21,8 +21,6 @@ function App() {
                 <Route index element={<Home />} />
                 <Route path='/' element={<Home />} />
                 <Route path='note/:id' element={<SingleNote />} />
-                <Route path='favorite/note/:id' element={<SingleNote />} />
-                <Route path='trash/note/:id' element={<SingleNote />} />
                 <Route path='/task' element={<Task />} />
                 <Route path='/new-note' element={<NewNote />} />
                 <Route path='/favorite' element={<Favorite />} />

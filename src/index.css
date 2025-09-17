@@ -17,6 +17,7 @@
   align-items: center;
   gap: .4rem;
   margin-top: 1rem;
+  cursor: pointer;
 }
 
 .modal-overlay {
@@ -41,5 +42,42 @@
 }
 
 .cancel{
+    cursor: pointer;
+}
+
+.single-task{
+    margin-bottom: .5rem;
+}
+
+.checked{
+    color: #7a7a7a;
+    text-decoration: line-through;
+}
+
+.add-task{
+    margin-top: 1.5rem;
+}
+
+.add-task input{
+    width: 90%;
+    box-sizing: border-box;
+    padding: .8rem;
+    border: none;
+    border: 1px solid #e7e7e7;
+    border-radius: .7rem;
+    margin-right: .3rem;
+}
+
+.add-task button{
+    border: none;
+    padding: .7rem;
+    background: #333;
+    border-radius: .7rem;
+    color: #fff;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.card.add{
     cursor: pointer;
 }

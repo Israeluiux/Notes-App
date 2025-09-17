@@ -9,7 +9,7 @@ const Card = ({ note }) => {
     const [type, setType] = useState(note.type)
 
     const handleNote = () => {
-        navigate(`note/${note.id}`)
+        navigate(`/note/${note.id}`)
     }
 
     const handleLike = async () => {
@@ -34,20 +34,16 @@ const Card = ({ note }) => {
                     setType(<><FaPalette />{note.type}</>)
                     break;
                 case 'Education':
-                    // return <FaGraduationCap /> {note.type}
                     setType(<><FaGraduationCap />{note.type}</>)
                     break;
                 case 'Travel':
-                    // return <FaPlane /> {note.type}
                    setType(<><FaPlane />{note.type}</>)
                     break;
                 case 'Health':
-                    // return <FaKitMedical /> {note.type}
                     setType(<><FaKitMedical />{note.type}</>)
                     break;
             
                 default:
-                    // return <FaPerson /> {note.type} 
                     setType(<><FaPerson /> Personal</>)
                     break;
             }

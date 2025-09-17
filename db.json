@@ -29,6 +29,18 @@
       "email": "",
       "username": "Emmanuel",
       "password": "emma@123"
+    },
+    {
+      "id": "1384",
+      "email": "testing@gmail.com",
+      "username": "Israel",
+      "password": "israel@123"
+    },
+    {
+      "id": "8bc8",
+      "email": "testing@gmail.com",
+      "username": "Joseph",
+      "password": "testing12345"
     }
   ],
   "notes": [
@@ -141,6 +153,33 @@
       "isFavorite": true,
       "trash": true,
       "type": "Health"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "2",
+      "name": "Go to the gym",
+      "checked": true
+    },
+    {
+      "id": "f8af",
+      "name": "Take a stroll",
+      "checked": true
+    },
+    {
+      "id": "f081",
+      "name": "Check my result",
+      "checked": false
+    },
+    {
+      "id": "4d51",
+      "name": "Complete my project",
+      "checked": false
+    },
+    {
+      "id": "e4a1",
+      "name": "Order from chicken republic",
+      "checked": false
     }
   ]
 }
